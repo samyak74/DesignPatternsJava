@@ -1,9 +1,9 @@
-package FactoryPattern.SuperClass;
+package FactoryPattern.ComputerModel.SuperClass;
 
 public class Computer {
-  String ram;
-  String hdd;
-  String cpu;
+  private String ram;
+  private String hdd;
+  private String cpu;
 
   public Computer(String ram, String hdd, String cpu) {
     this.ram = ram;
@@ -11,7 +11,7 @@ public class Computer {
     this.hdd = hdd;
   }
 
-  public String getRam() {
+  private String getRam() {
     return ram;
   }
 
@@ -19,7 +19,7 @@ public class Computer {
     this.ram = ram;
   }
 
-  public String getHdd() {
+  private String getHdd() {
     return hdd;
   }
 
@@ -27,7 +27,7 @@ public class Computer {
     this.hdd = hdd;
   }
 
-  public String getCpu() {
+  private String getCpu() {
     return cpu;
   }
 

@@ -1,14 +1,12 @@
+package SingletonPattern;
+
 import FactoryPattern.ComputerFactory;
-import FactoryPattern.SubClass.PC;
-import FactoryPattern.SubClass.Server;
-import SingletonPattern.BillPughSingleton;
-import SingletonPattern.EagerInitializationSingleton;
-import SingletonPattern.LazyInitializationSingleton;
-import SingletonPattern.StaticInitializationSingleton;
+import FactoryPattern.ComputerModel.SubClass.PC;
+import FactoryPattern.ComputerModel.SubClass.Server;
 
-public class RunApp {
+public class Main {
 
-    public static void main (String[] args) throws java.lang.Exception {
+    public static void main (String[] args) throws Exception {
 
       //compare the address of both instances
       //EagerInitialization Singleton
@@ -27,12 +25,5 @@ public class RunApp {
       BillPughSingleton billPughSingleton = BillPughSingleton.getInstance();
       BillPughSingleton billPughSingleton1 = BillPughSingleton.getInstance();
 
-      //Factory Pattern
-      PC personalComputer = (PC) ComputerFactory.getComputer("PC", "16GB", "1TB", "3Ghz");
-      Server officeServer = (Server) ComputerFactory.getComputer("server", "128GB", "2TB", "5Ghz");
-      PC pc = new PC("8GB", "200GB", "2.1Ghz");
-      pc.playGame();
-      personalComputer.playGame();
-      officeServer.handleRequest();
     }
 }

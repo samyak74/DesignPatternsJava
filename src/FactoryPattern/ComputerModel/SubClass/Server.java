@@ -1,6 +1,6 @@
-package FactoryPattern.SubClass;
+package FactoryPattern.ComputerModel.SubClass;
 
-import FactoryPattern.SuperClass.Computer;
+import FactoryPattern.ComputerModel.SuperClass.Computer;
 
 public class Server extends Computer {
 

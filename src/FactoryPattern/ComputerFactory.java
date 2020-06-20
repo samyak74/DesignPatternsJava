@@ -1,8 +1,8 @@
 package FactoryPattern;
 
-import FactoryPattern.SubClass.PC;
-import FactoryPattern.SubClass.Server;
-import FactoryPattern.SuperClass.Computer;
+import FactoryPattern.ComputerModel.SubClass.PC;
+import FactoryPattern.ComputerModel.SubClass.Server;
+import FactoryPattern.ComputerModel.SuperClass.Computer;
 
 public class ComputerFactory {
 
